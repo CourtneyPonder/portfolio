@@ -18,24 +18,6 @@ const Contact = () => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const validateEmail = (email) => {
-    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    return regex.test(email);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const newErrors = {};
-    if (!formData.name) newErrors.name = 'Name is required';
-    if (!formData.email || !validateEmail(formData.email)) newErrors.email = 'Valid email is required';
-    if (!formData.message) newErrors.message = 'Message is required';
-    setErrors(newErrors);
-
-    if (Object.keys(newErrors).length === 0) {
-      alert('Form submitted successfully');
-    }
-  };
-
   return (
     <div>
       <h2>Contact</h2>

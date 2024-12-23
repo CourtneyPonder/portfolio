@@ -2,12 +2,7 @@ import React from 'react';
 
 const Portfolio = () => {
   const projects = [
-    { title: 'App 1', image: 'app1-thumbnail.jpg', deployedUrl: '#', githubUrl: '#' },
-    { title: 'App 2', image: 'app2-thumbnail.jpg', deployedUrl: '#', githubUrl: '#' },
-    { title: 'App 3', image: 'app3-thumbnail.jpg', deployedUrl: '#', githubUrl: '#' },
-    { title: 'App 4', image: 'app4-thumbnail.jpg', deployedUrl: '#', githubUrl: '#' },
-    { title: 'App 5', image: 'app5-thumbnail.jpg', deployedUrl: '#', githubUrl: '#' },
-    { title: 'App 6', image: 'app6-thumbnail.jpg', deployedUrl: '#', githubUrl: '#' },
+    { title: 'Portfolio', image: '', deployedUrl: '', githubUrl: 'https://github.com/CourtneyPonder/portfolio' },
   ];
 
   return (
